@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #666;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #dropdownContainer {
+    margin-bottom: 20px;
+  }
+  
+  .dropdown-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  select[name="options[]"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="number"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="button"],
+  button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="button"]:hover,
+  button[type="submit"]:hover {
+    opacity: 0.9;
+  }
+  
+  .delete-btn {
+    background-color: #D61A3C; /* Change color to red */
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #D61A3C;
+  }
+  
+  #addDropdown {
+    background-color: rgba(57,173,72,1.00); /* Change color to green */
+    color: white;
+  }
+  
+  #addDropdown:hover {
+    background-color: darkgreen;
+  }
+  
+  #submitBtn,
+  #update_form button[type="submit"] {
+    background-color: rgba(44,111,187,1.00); /* Change color to blue */
+    color: white;
+  }
+  
+  #submitBtn:hover,
+  #update_form button[type="submit"]:hover {
+    background-color: rgba(44,111,187,1.00);
+  }
+  
+  @media screen and (max-width: 767px) {
+    form {
+      padding: 10px;
+    }
+  
+    .dropdown-container {
+      flex-direction: column;
+    }
+  
+    select[name="options[]"],
+    input[type="number"],
+    .delete-btn,
+    #addDropdown,
+    #submitBtn {
+      flex: 0 0 100%;
+      margin-top: 10px;
+    }
+  }
+  
